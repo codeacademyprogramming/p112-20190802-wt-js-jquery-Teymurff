@@ -67,7 +67,77 @@ $("main section:nth-child(2)").attr({ "id": "cards-section" });
 $("#cards-section").append("<div></div>");
 $("#cards-section div").addClass("container forcards");
 $("#cards-section .forcards").append("<div></div>");
-$(".forcards div").addClass("row text-center");
+$(".forcards div").addClass("row text-center forcardsrow");
+$(".forcards .forcardsrow").append("<div></div>")
+$(".forcards .forcardsrow").append("<div></div>")
+$(".forcards .forcardsrow").append("<div></div>")
+$(".forcards .forcardsrow").append("<div></div>")
+$(".forcardsrow div:nth-child(1)").addClass("col-3 imagecol1 mb-4");
+$(".forcardsrow div:nth-child(2)").addClass("col-3 imagecol2 mb-4");
+$(".forcardsrow div:nth-child(3)").addClass("col-3 imagecol3 mb-4");
+$(".forcardsrow div:nth-child(4)").addClass("col-3 imagecol4 mb-4");
+$(".forcardsrow .imagecol1").append("<div></div>");
+$(".forcardsrow .imagecol2").append("<div></div>");
+$(".forcardsrow .imagecol3").append("<div></div>");
+$(".forcardsrow .imagecol4").append("<div></div>");
+$(".imagecol1 div:nth-child(1)").addClass("card h-100 fortemplatecards1");
+$(".imagecol2 div:nth-child(1)").addClass("card h-100 fortemplatecards2");
+$(".imagecol3 div:nth-child(1)").addClass("card h-100 fortemplatecards3");
+$(".imagecol4 div:nth-child(1)").addClass("card h-100 fortemplatecards4");
+$(".imagecol1 .fortemplatecards1").append("<img>");
+$(".imagecol2 .fortemplatecards2").append("<img>");
+$(".imagecol3 .fortemplatecards3").append("<img>");
+$(".imagecol4 .fortemplatecards4").append("<img>");
+$(".fortemplatecards1 img").addClass("card-img-top").attr({"src" : "http://placehold.it/500x325", "alt" : "This is image" });
+$(".fortemplatecards2 img").addClass("card-img-top").attr({"src" : "http://placehold.it/500x325", "alt" : "This is image" });
+$(".fortemplatecards3 img").addClass("card-img-top").attr({"src" : "http://placehold.it/500x325", "alt" : "This is image" });
+$(".fortemplatecards4 img").addClass("card-img-top").attr({"src" : "http://placehold.it/500x325", "alt" : "This is image" });
+$(".imagecol1 .fortemplatecards1").append("<div></div>");
+$(".imagecol2 .fortemplatecards2").append("<div></div>");
+$(".imagecol3 .fortemplatecards3").append("<div></div>");
+$(".imagecol4 .fortemplatecards4").append("<div></div>");
+$(".fortemplatecards1 div:nth-child(2)").addClass("card-body fortempcardbody1")
+$(".fortemplatecards2 div:nth-child(2)").addClass("card-body fortempcardbody2")
+$(".fortemplatecards3 div:nth-child(2)").addClass("card-body fortempcardbody3")
+$(".fortemplatecards4 div:nth-child(2)").addClass("card-body fortempcardbody4")
+$(".fortempcardbody1").append("<h4></h4>");
+$(".fortempcardbody1 h4").addClass("card-title").text("Card title");
+$(".fortempcardbody1").append("<p></p>");
+$(".fortempcardbody1 p").addClass("card-text").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.");
+$(".fortempcardbody2").append("<h4></h4>");
+$(".fortempcardbody2 h4").addClass("card-title").text("Card title");
+$(".fortempcardbody2").append("<p></p>");
+$(".fortempcardbody2 p").addClass("card-text").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.");
+$(".fortempcardbody3").append("<h4></h4>");
+$(".fortempcardbody3 h4").addClass("card-title").text("Card title");
+$(".fortempcardbody3").append("<p></p>");
+$(".fortempcardbody3 p").addClass("card-text").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.");
+$(".fortempcardbody4").append("<h4></h4>");
+$(".fortempcardbody4 h4").addClass("card-title").text("Card title");
+$(".fortempcardbody4").append("<p></p>");
+$(".fortempcardbody4 p").addClass("card-text").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.");
+$(".imagecol1 .fortemplatecards1").append("<div></div>");
+$(".imagecol2 .fortemplatecards2").append("<div></div>");
+$(".imagecol3 .fortemplatecards3").append("<div></div>");
+$(".imagecol4 .fortemplatecards4").append("<div></div>");
+$(".fortemplatecards1 div:nth-child(3)").addClass("card-footer fortempcardfooter1")
+$(".fortemplatecards2 div:nth-child(3)").addClass("card-footer fortempcardfooter2")
+$(".fortemplatecards3 div:nth-child(3)").addClass("card-footer fortempcardfooter3")
+$(".fortemplatecards4 div:nth-child(3)").addClass("card-footer fortempcardfooter4")
+$(".fortempcardfooter1").append("<a></a>");
+$(".fortempcardfooter1 a").addClass("btn btn-primary").text("Find Out More!").attr({"href" : "#"});
+$(".fortempcardfooter2").append("<a></a>");
+$(".fortempcardfooter2 a").addClass("btn btn-primary").text("Find Out More!").attr({"href" : "#"});
+$(".fortempcardfooter3").append("<a></a>");
+$(".fortempcardfooter3 a").addClass("btn btn-primary").text("Find Out More!").attr({"href" : "#"});
+$(".fortempcardfooter4").append("<a></a>");
+$(".fortempcardfooter4 a").addClass("btn btn-primary").text("Find Out More!").attr({"href" : "#"});
 
+//Footer
+$("footer").addClass("py-5 bg-dark");
+$("footer").append("<div></div>")
+$("footer div").addClass("container forfooter");
+$(".forfooter").append("<p></p>");
+$(".forfooter p").addClass("text-center text-white m-0").text("Copyright © Your Website 2019");
 
 });
